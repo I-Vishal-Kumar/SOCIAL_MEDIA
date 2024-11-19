@@ -25,7 +25,7 @@ const usePostCreateMutation = (dbUser: dbUserType, setPosts: React.Dispatch<SetS
 
         try {
             const fileName = `${ Date.now() }-${ media.name }`
-            const { data: uploadData, error: uploadError } = await supabase.storage
+            const { data: _, error: uploadError } = await supabase.storage
                 .from('post-image')
                 .upload(`public/${ fileName }`, media);
 

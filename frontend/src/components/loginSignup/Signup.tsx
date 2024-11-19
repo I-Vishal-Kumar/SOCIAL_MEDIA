@@ -48,7 +48,7 @@ const SignupSection: React.FC<ChildComponentProps> = ({ updateActive }) => {
             </div>
             <div className="text-center md:hidden">
                 <p
-                    onClick={(e) => updateActive((prev) => !prev)}
+                    onClick={() => updateActive((prev) => !prev)}
                     className="mt-20 hover:text-blue-300 cursor-pointer"
                 >
                     Have an account login now.
